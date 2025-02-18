@@ -13,3 +13,5 @@
 /Auction.Infrastructure/obj
 /Auction.Interface/bin/Debug/net8.0
 /Auction.Interface/obj
+/Auction.Console/bin/Debug/net8.0
+/Auction.Console/obj

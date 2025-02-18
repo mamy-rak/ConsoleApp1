@@ -1,10 +1,4 @@
-﻿namespace Auction.Application.FindWinner;
-
-public record FindWinnerRequest(Bidder[] bidders, int reservePrice)
-{
-    public Bidder[] Bidders { get; } = bidders;
-    public int ReservePrice { get; } = reservePrice;
-}
+﻿namespace Auction.Core;
 
 public record Bidder(string name, int[]? bids)
 {
