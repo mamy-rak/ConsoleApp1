@@ -5,3 +5,11 @@
 /.vs
 /bin/Debug/net8.0
 /obj
+/Auction.Application/bin/Debug/net8.0
+/Auction.Application/obj
+/Auction.Core/bin/Debug/net8.0
+/Auction.Core/obj
+/Auction.Infrastructure/bin/Debug/net8.0
+/Auction.Infrastructure/obj
+/Auction.Interface/bin/Debug/net8.0
+/Auction.Interface/obj
