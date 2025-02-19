@@ -7,6 +7,11 @@ public class DataContextInMemory : IDataContext
     private readonly List<Bidder> _bidders = new();
     private int _reservePrice;
 
+    public void ResetBidders()
+    {
+        _bidders.Clear();
+    }
+
     public void AddBidder(Bidder bidder)
     {
         _bidders.Add(bidder);

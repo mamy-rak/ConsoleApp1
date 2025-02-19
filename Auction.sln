@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auction.Application", "Auct
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auction.Console", "Auction.Console\Auction.Console.csproj", "{ACDBE9EA-1F6B-498C-A2C4-9C5E47CF260E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acution.Test", "Acution.Test\Acution.Test.csproj", "{0954E3FB-BC53-437F-BEFA-10FADEF410AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{ACDBE9EA-1F6B-498C-A2C4-9C5E47CF260E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACDBE9EA-1F6B-498C-A2C4-9C5E47CF260E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACDBE9EA-1F6B-498C-A2C4-9C5E47CF260E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0954E3FB-BC53-437F-BEFA-10FADEF410AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0954E3FB-BC53-437F-BEFA-10FADEF410AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0954E3FB-BC53-437F-BEFA-10FADEF410AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0954E3FB-BC53-437F-BEFA-10FADEF410AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
