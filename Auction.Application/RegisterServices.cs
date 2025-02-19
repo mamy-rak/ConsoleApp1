@@ -9,8 +9,8 @@ public static class RegisterServices
 {
     public static void RegisterApplicationServices(this IServiceCollection services)
     {
-        services.AddSingleton<AddBidderHandler>();
-        services.AddSingleton<FindWinnerHandler>();
-        services.AddSingleton<SetReservePriceHandler>();
+        services.AddTransient<AddBidderHandler>();
+        services.AddTransient<FindWinnerHandler>();
+        services.AddTransient<SetReservePriceHandler>();
     }
 }

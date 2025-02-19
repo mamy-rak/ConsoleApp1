@@ -16,7 +16,7 @@ internal class Console(IServiceProvider serviceProvider)
 
         setReservePriceHandler.Handle(new SetReservePriceRequest(12));
 
-        addBidderHandler.Handle(new AddBidderRequest("A", [110, 140]));
+        addBidderHandler.Handle(new AddBidderRequest("A", [110, 120]));
         addBidderHandler.Handle(new AddBidderRequest("B", [0]));
         addBidderHandler.Handle(new AddBidderRequest("C", [125]));
         addBidderHandler.Handle(new AddBidderRequest("D", [105, 115, 90]));

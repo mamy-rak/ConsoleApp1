@@ -30,6 +30,7 @@ public class FindWinnerHandlerTest(TestFixture fixture) : IClassFixture<TestFixt
 
         //Assert
         mockPrinter.Verify(p => p.Print("No accepted bidder"), Times.Once);
+        mockPrinter.Reset();
     }
 
     //The winning bidder is determined as the one whose bid, higher than the reserve price, is the highest
@@ -51,6 +52,7 @@ public class FindWinnerHandlerTest(TestFixture fixture) : IClassFixture<TestFixt
 
         //Assert
         mockPrinter.Verify(p => p.Print("Winner : E"), Times.Once);
+        mockPrinter.Reset();
     }
 
     //The winning bidder is determined as the one whose bid, equal to the reserve price
@@ -72,6 +74,7 @@ public class FindWinnerHandlerTest(TestFixture fixture) : IClassFixture<TestFixt
 
         //Assert
         mockPrinter.Verify(p => p.Print("Winner : E"), Times.Once);
+        mockPrinter.Reset();
     }
 
     //The winning price is the highest bid placed by any non-winning bidder that is above the reserve price
@@ -93,6 +96,7 @@ public class FindWinnerHandlerTest(TestFixture fixture) : IClassFixture<TestFixt
 
         //Assert
         mockPrinter.Verify(p => p.Print("Winning price : 125"), Times.Once);
+        mockPrinter.Reset();
     }
 
     //The winning price is the reserve price itself
@@ -114,5 +118,6 @@ public class FindWinnerHandlerTest(TestFixture fixture) : IClassFixture<TestFixt
 
         //Assert
         mockPrinter.Verify(p => p.Print("Winning price : 139"), Times.Once);
+        mockPrinter.Reset();
     }
 }

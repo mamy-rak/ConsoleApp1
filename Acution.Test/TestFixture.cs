@@ -5,9 +5,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Moq;
 
 namespace Acution.Test;
-public class TestFixture
+public class TestFixture : IDisposable
 {
-    public IServiceProvider ServiceProvider { get; private set; }
+    public ServiceProvider ServiceProvider { get; private set; }
     public Mock<IPrinter> MockPrinter { get; private set; }
 
     public TestFixture()
@@ -16,10 +16,15 @@ public class TestFixture
 
         MockPrinter = new Mock<IPrinter>();
 
-        serviceCollection.AddSingleton<FindWinnerHandler>();
+        serviceCollection.AddTransient<FindWinnerHandler>();
         serviceCollection.AddSingleton<IDataContext, DataContextInMemory>();
         serviceCollection.AddSingleton(MockPrinter.Object);
 
         ServiceProvider = serviceCollection.BuildServiceProvider();
+    }
+
+    public void Dispose()
+    {
+        ServiceProvider.Dispose();
     }
 }

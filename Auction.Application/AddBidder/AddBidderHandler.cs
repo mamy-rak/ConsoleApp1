@@ -29,9 +29,9 @@ public class AddBidderHandler(IDataContext dataContext, IPrinter printer)
 
         var acceptedBids = request.Bids.Where(bid => bid >= 0).ToArray();
 
-        printer.Print($"Adding bidder {request.Name} with bids {string.Join(", ", acceptedBids)}");
-
         var bidder = new Bidder(request.Name, acceptedBids);
+        printer.Print(bidder.ToString());
+
         dataContext.AddBidder(bidder);
     }
 }
